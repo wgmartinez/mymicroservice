@@ -9,3 +9,4 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 WORKDIR /app
 COPY --from=build /app .
 ENTRYPOINT ["dotnet", "myMicroservice.dll"]
+EXPOSE 3000
