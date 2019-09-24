@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mymicroservice
+spec:
+  selector:
+     run: mymicroservice
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
+  type: LoadBalancer

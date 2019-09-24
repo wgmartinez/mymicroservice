@@ -1,0 +1,14 @@
+C:\projects5\myMicroservice\bin\Release\netcoreapp2.2\myMicroservice.deps.json
+C:\projects5\myMicroservice\bin\Release\netcoreapp2.2\myMicroservice.runtimeconfig.json
+C:\projects5\myMicroservice\bin\Release\netcoreapp2.2\myMicroservice.runtimeconfig.dev.json
+C:\projects5\myMicroservice\bin\Release\netcoreapp2.2\myMicroservice.dll
+C:\projects5\myMicroservice\bin\Release\netcoreapp2.2\myMicroservice.pdb
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.csprojAssemblyReference.cache
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.csproj.CoreCompileInputs.cache
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.RazorAssemblyInfo.cache
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.RazorAssemblyInfo.cs
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.AssemblyInfoInputs.cache
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.AssemblyInfo.cs
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.RazorTargetAssemblyInfo.cache
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.dll
+C:\projects5\myMicroservice\obj\Release\netcoreapp2.2\myMicroservice.pdb

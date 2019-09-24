@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: mymicroservice
+  name: mymicroservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: mymicroservice
+  template:
+    metadata:
+      labels:
+        run: mymicroservice
+    spec:
+      containers:
+      - image: gcr.io/cicd-implementation/mymicroservice:latest
+        name: mymicroservice
+        ports:
+        - containerPort: 3000

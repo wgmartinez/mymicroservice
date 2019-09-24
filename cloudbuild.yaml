@@ -1,0 +1,22 @@
+steps:
+# Step 1: Build a docker image and push it to GCR
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/mymicroservice', '.']
+# Step 2: Deploy the docker image in Kubernetes
+- name: 'gcr.io/cloud-builders/kubectl'
+  args: ['apply', '-f', 'k8s/']
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=australia-southeast1'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=ehrp-cluster'
+- name: 'gcr.io/cloud-builders/kubectl'
+  args: [
+   'set', 
+   'image', 
+   'deployment', 
+   'mymicroservice', 
+   'mymicroservice=gcr.io/$PROJECT_ID/mymicroservice:$TAG_NAME'
+  ]
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=australia-southeast1'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=ehrp-cluster'
+images: ['gcr.io/$PROJECT_ID/mymicroservice']
